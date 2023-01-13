@@ -1,10 +1,10 @@
-import 'package:bank_sathi/Controller/Local_Notification_Controller.dart';
+// import 'package:bank_sathi/Controller/Local_Notification_Controller.dart';
 import 'package:bank_sathi/Screens/OnBoarding/SplashScreen.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
+// import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_core/firebase_core.dart';
 
 GlobalKey<NavigatorState> navKey = GlobalKey<NavigatorState>();
 
