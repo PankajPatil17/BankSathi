@@ -198,7 +198,7 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                     Container(
                       padding: EdgeInsets.all(2.h),
                       decoration: BoxDecoration(
-                          color: Color.fromARGB(209, 239, 201, 239)),
+                          color: Color.fromARGB(209, 245, 219, 245)),
                     ),
                   ],
                 ),
