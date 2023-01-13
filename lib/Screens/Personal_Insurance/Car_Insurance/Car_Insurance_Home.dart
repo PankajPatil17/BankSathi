@@ -82,7 +82,7 @@ class _CarInsuranceHomePageState extends State<CarInsuranceHomePage> {
                           child: Material(
                             elevation: 3,
                             borderRadius: BorderRadius.circular(9),
-                            shadowColor: Color(0xffE6F7FF),
+                            shadowColor: Color.fromARGB(255, 229, 221, 241),
                             child: TextFormField(
                               controller: carnumber,
                               validator: (val) {
@@ -128,8 +128,9 @@ class _CarInsuranceHomePageState extends State<CarInsuranceHomePage> {
                               width: 17.h,
                               margin: EdgeInsets.only(top: 2.h, bottom: 3.5.h),
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(6),
-                                  color: Color(0xff4BC4F9)),
+                                borderRadius: BorderRadius.circular(6),
+                                color: Color(0xff49D49D),
+                              ),
                               child: Center(
                                 child: CommonText(
                                   label: 'Submit',

@@ -157,7 +157,7 @@ class _CarVehicleModelState extends State<CarVehicleModel> {
                                             carinsurancecontroller.CarModel
                                                 .indexOf(carinsurancecontroller
                                                     .CarModel[index])
-                                        ? Color(0xff4BC4F9)
+                                        ? Color(0xffA882DD)
                                         : Colors.transparent,
                                     width: 1.5),
                                 shape: BoxShape.rectangle),
