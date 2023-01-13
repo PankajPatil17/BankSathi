@@ -126,9 +126,15 @@ class _HomePageState extends State<HomePage> {
 
   EmployeeSupport() {
     return Container(
-      decoration: BoxDecoration(color: Colors.white, boxShadow: [
-        BoxShadow(color: Colors.black12, blurRadius: 2, offset: Offset(0, 2))
-      ]),
+      decoration: BoxDecoration(
+          gradient: LinearGradient(colors: [
+            Color.fromARGB(255, 225, 211, 245),
+            Color.fromARGB(255, 253, 252, 255)
+          ]),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.black12, blurRadius: 2, offset: Offset(0, 2))
+          ]),
       padding: EdgeInsets.all(2.h),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -166,7 +172,10 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset('assets/Images/Group_mediclaim.svg'),
+                    SvgPicture.asset(
+                      'assets/Images/Group_mediclaim.svg',
+                      color: Color.fromARGB(255, 101, 63, 154),
+                    ),
                     SizedBox(
                       height: 1.2.h,
                     ),
@@ -190,7 +199,10 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset('assets/Images/Group_accident.svg'),
+                    SvgPicture.asset(
+                      'assets/Images/Group_accident.svg',
+                      color: Color.fromARGB(255, 101, 63, 154),
+                    ),
                     SizedBox(
                       height: 1.2.h,
                     ),
@@ -215,7 +227,10 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset('assets/Images/view_all.svg'),
+                    SvgPicture.asset(
+                      'assets/Images/view_all.svg',
+                      color: Color.fromARGB(255, 101, 63, 154),
+                    ),
                     SizedBox(
                       height: 1.2.h,
                     ),
