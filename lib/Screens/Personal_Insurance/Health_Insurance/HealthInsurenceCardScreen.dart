@@ -97,7 +97,7 @@ class _HealthInsurenceCardScreenState extends State<HealthInsurenceCardScreen> {
                         ),
                       ),
                       ListView.builder(
-                        itemCount: 8,
+                        itemCount: 1,
                         shrinkWrap: true,
                         controller: ScrollController(),
                         itemBuilder: (BuildContext context, int index) {
