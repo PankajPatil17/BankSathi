@@ -23,6 +23,7 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
   DateTime? _ManufacYr;
   DateTime? _RegDateYr;
   DateTime? _PolicyExpdate;
+  TextEditingController RegNum = TextEditingController();
   void _presentDatePicker1() {
     // showDatePicker is a pre-made funtion of Flutter
     showDatePicker(
@@ -184,50 +185,166 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
                         size: 13.sp,
                       ),
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            HeaderText(titleLabel: 'Date of Birth'),
-                            Container(
-                                height: 6.5.h,
-                                width: 43.w,
-                                decoration: BoxDeco(),
-                                padding: EdgeInsets.symmetric(
-                                    vertical: 1.5.h, horizontal: 1.3.h),
-                                child: Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text(
-                                      _ManufacYr != null
-                                          ? _ManufacYr.toString()
-                                              .replaceRange(11, 23, '')
-                                          : 'Select Date',
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.w500,
-                                          fontSize: 10.sp,
-                                          fontFamily: 'Nunito Sans'),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  HeaderText(titleLabel: 'Manufacture Year'),
+                                  Container(
+                                      height: 6.5.h,
+                                      width: 40.w,
+                                      decoration: BoxDeco(),
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 1.5.h, horizontal: 1.3.h),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            _ManufacYr != null
+                                                ? _ManufacYr.toString()
+                                                    .replaceRange(11, 23, '')
+                                                : 'MM/YYYY',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 10.sp,
+                                                fontFamily: 'Nunito Sans'),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              setState(() {
+                                                _presentDatePicker1();
+                                              });
+                                            },
+                                            child: Icon(
+                                              Icons.calendar_today_rounded,
+                                              color: Color(0xffb2b2b2),
+                                              size: 2.3.h,
+                                            ),
+                                          ),
+                                        ],
+                                      )),
+                                ],
+                              ),
+                              Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  HeaderText(titleLabel: 'Registration Date'),
+                                  Container(
+                                      height: 6.5.h,
+                                      width: 40.w,
+                                      decoration: BoxDeco(),
+                                      padding: EdgeInsets.symmetric(
+                                          vertical: 1.5.h, horizontal: 1.3.h),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Text(
+                                            _RegDateYr != null
+                                                ? _RegDateYr.toString()
+                                                    .replaceRange(11, 23, '')
+                                                : 'DD/MM/YYYY',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.w500,
+                                                fontSize: 10.sp,
+                                                fontFamily: 'Nunito Sans'),
+                                          ),
+                                          GestureDetector(
+                                            onTap: () {
+                                              setState(() {
+                                                _presentDatePicker2();
+                                              });
+                                            },
+                                            child: Icon(
+                                              Icons.calendar_today_rounded,
+                                              color: Color(0xffb2b2b2),
+                                              size: 2.3.h,
+                                            ),
+                                          ),
+                                        ],
+                                      )),
+                                ],
+                              ),
+                            ],
+                          ),
+                          HeaderText(titleLabel: 'Policy Expiry Date'),
+                          Container(
+                              height: 6.5.h,
+                              width: 100.w,
+                              decoration: BoxDeco(),
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 1.5.h, horizontal: 1.3.h),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    _PolicyExpdate != null
+                                        ? _PolicyExpdate.toString()
+                                            .replaceRange(11, 23, '')
+                                        : 'DD/MM/YYYY',
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w500,
+                                        fontSize: 10.sp,
+                                        fontFamily: 'Nunito Sans'),
+                                  ),
+                                  GestureDetector(
+                                    onTap: () {
+                                      setState(() {
+                                        _presentDatePicker3();
+                                      });
+                                    },
+                                    child: Icon(
+                                      Icons.calendar_today_rounded,
+                                      color: Color(0xffb2b2b2),
+                                      size: 2.3.h,
                                     ),
-                                    GestureDetector(
-                                      onTap: () {
-                                        setState(() {
-                                          _presentDatePicker1();
-                                        });
-                                      },
-                                      child: Icon(
-                                        Icons.calendar_today_rounded,
-                                        color: Color(0xffb2b2b2),
-                                        size: 2.3.h,
-                                      ),
-                                    ),
-                                  ],
-                                )),
-                          ],
-                        ),
-                      ],
+                                  ),
+                                ],
+                              )),
+                          HeaderText(titleLabel: 'Pancard Number'),
+                          Container(
+                            decoration: BoxDeco(),
+                            width: 100.w,
+                            child: TextFormField(
+                              validator: (val) {
+                                if (val!.isEmpty) {
+                                  return 'Please Enter Pancard Number';
+                                } else if (val.length < 2) {
+                                  return "Please Enter Pancard Number";
+                                }
+                                return null;
+                              },
+                              controller: RegNum,
+                              keyboardType: TextInputType.emailAddress,
+                              decoration: InputDecoration(
+                                border: InputBorder.none,
+                                contentPadding: EdgeInsets.symmetric(
+                                  horizontal: 10.0,
+                                ),
+                                hintText: 'Enter Pancard Number',
+                                hintStyle: TextStyle(
+                                    fontWeight: FontWeight.w500,
+                                    fontSize: 11.sp,
+                                    fontFamily: 'Nunito Sans'),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                     GestureDetector(
                       onTap: () {},
