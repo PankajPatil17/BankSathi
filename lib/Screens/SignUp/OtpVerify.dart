@@ -213,9 +213,8 @@ class _OtpVerifyState extends State<OtpVerify> {
                 margin: EdgeInsets.symmetric(vertical: 3.h),
                 width: 14.h,
                 decoration: BoxDecoration(
-                  color: Color(0xff4BC4F9),
+                  color: Color.fromARGB(255, 118, 88, 159),
                   borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: Color(0xff4BC4F9)),
                 ),
                 child: Center(
                   child: Text(

@@ -62,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 Padding(
                   padding: EdgeInsets.only(left: 2.5.h),
                   child: CommonTextNunito(
-                    colorT: Color(0xff021B8D),
+                    colorT: Color.fromARGB(255, 97, 120, 220),
                     label: 'Login',
                     size: 16.sp,
                     fontw8: FontWeight.w500,
@@ -252,9 +252,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       margin: EdgeInsets.symmetric(vertical: 3.h),
                       width: 14.h,
                       decoration: BoxDecoration(
-                        color: Color(0xff4BC4F9),
+                        color: Color.fromARGB(255, 118, 88, 159),
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Color(0xff4BC4F9)),
                       ),
                       child: Center(
                         child: Text(
@@ -292,9 +291,8 @@ class _LoginScreenState extends State<LoginScreen> {
                       margin: EdgeInsets.symmetric(vertical: 3.h),
                       width: 20.h,
                       decoration: BoxDecoration(
-                        color: Color(0xff4BC4F9),
+                        color: Color.fromARGB(255, 118, 88, 159),
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Color(0xff4BC4F9)),
                       ),
                       child: Center(
                         child: Text(

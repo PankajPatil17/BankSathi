@@ -5,6 +5,7 @@ import 'package:bank_sathi/Screens/EmployeeBenefitProgram/EmpBenProgram.dart';
 import 'package:bank_sathi/Screens/HealthInsureSupport/HealthInsureSupportMainScreen.dart';
 import 'package:bank_sathi/Screens/Personal_Insurance/Car_Insurance/Car_Insurance_Home.dart';
 import 'package:bank_sathi/Screens/Personal_Insurance/Health_Insurance/HealthInsurerGroupsMainScreenFirst.dart';
+import 'package:bank_sathi/Screens/Personal_Insurance/Term_Insurance/TermInsurance.dart';
 import 'package:bank_sathi/Screens/WellnessCorner/Wellness_ComingSoon.dart';
 import 'package:bank_sathi/Controller/AccountController.dart';
 import 'package:bank_sathi/Controller/HomePageController.dart';
@@ -479,7 +480,9 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset('assets/Images/Car.svg'),
+                    SvgPicture.asset(
+                      'assets/Images/Car.svg',
+                    ),
                     SizedBox(
                       height: 1.2.h,
                     ),
@@ -547,14 +550,7 @@ class _HomePageState extends State<HomePage> {
               ),
               GestureDetector(
                 onTap: () {
-                  setState(() {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return WellnessComingSoon();
-                      },
-                    );
-                  });
+                  Get.to(TermInsurance());
                 },
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,

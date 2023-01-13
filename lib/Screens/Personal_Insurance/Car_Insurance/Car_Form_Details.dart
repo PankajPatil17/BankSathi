@@ -3,6 +3,7 @@
 import 'package:bank_sathi/Controller/CarInsurance_Controller.dart';
 import 'package:bank_sathi/Generic/Common/CommonBottomBar.dart';
 import 'package:bank_sathi/Generic/Common/CommonTextNunito.dart';
+import 'package:bank_sathi/Generic/Common/Common_Text.dart';
 import 'package:bank_sathi/Generic/Constant/colors.dart';
 import 'package:bank_sathi/Screens/Personal_Insurance/Car_Insurance/Car_Insurance_Home.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,20 @@ class CarFormDetails extends StatefulWidget {
 class _CarFormDetailsState extends State<CarFormDetails> {
   var carinsurancecontroller = Get.put(CarInsuranceController());
   TextEditingController search = TextEditingController();
+  String? year;
+  List YearList = [
+    '2022',
+    '2021',
+    '2020',
+    '2019',
+    '2018',
+    '2017',
+    '2016',
+    '2015',
+    '2014',
+    '2013',
+    '2012',
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -115,10 +130,75 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                                   ),
                                 ),
                               ],
-                            )
+                            ),
                           ],
                         ),
                       ),
+                      margin: EdgeInsets.only(bottom: 2.5.h),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        CommonTextNunito(
+                          label: 'Registration Year',
+                          fontw8: FontWeight.w500,
+                          size: 12.sp,
+                          colorT: PBlack,
+                        ),
+                        Spacer(),
+                        Container(
+                          height: 5.h,
+                          width: 15.h,
+                          margin: EdgeInsets.only(bottom: 2.h),
+                          decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(6),
+                              boxShadow: commonboxshadowBlue),
+                          child: Padding(
+                            padding: EdgeInsets.only(
+                                left: 1.h, right: 1.h, top: 0.9.h),
+                            child: DropdownButton(
+                                focusColor: Colors.white,
+                                menuMaxHeight: 300.0,
+                                isExpanded: true,
+                                isDense: true,
+                                hint: CommonText(
+                                  label: 'Registration',
+                                  textStyle: labelTextStyleGreyReguler14,
+                                ),
+                                underline: Container(
+                                  color: Colors.white,
+                                ),
+                                value: year,
+                                items: YearList.map((item) {
+                                  return DropdownMenuItem(
+                                      enabled: true,
+                                      onTap: () {},
+                                      value: item.toString(),
+                                      child: Text(
+                                        item,
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 14,
+                                            fontFamily: 'Nunito Sans',
+                                            overflow: TextOverflow.ellipsis),
+                                      ));
+                                }).toList(),
+                                onChanged: (String? _v) {
+                                  setState(() {
+                                    year = _v!;
+                                  });
+                                }),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      padding: EdgeInsets.all(2.h),
+                      decoration: BoxDecoration(
+                          color: Color.fromARGB(209, 245, 219, 245)),
                     ),
                   ],
                 ),
