@@ -1,5 +1,4 @@
 import 'package:bank_sathi/Controller/HealthInsureController.dart';
-import 'package:bank_sathi/Generic/Constant/colors.dart';
 import 'package:bank_sathi/Screens/HealthInsureSupport/ContactUs.dart';
 // import 'package:bank_sathi/Screens/MyPolicies.dart';
 import 'package:bank_sathi/Screens/My_Profile/MyProfile.dart';
