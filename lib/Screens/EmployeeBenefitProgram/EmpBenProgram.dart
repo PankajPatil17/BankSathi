@@ -56,7 +56,7 @@ class _EmpBenProgramState extends State<EmpBenProgram> {
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
                 BackButton(),
-                SvgPicture.asset('assets/Images/Emedlife.svg'),
+                SvgPicture.asset('assets/Images/BankSathi.svg'),
                 Spacer(),
                 SvgPicture.asset('assets/Images/Notification.svg'),
               ],

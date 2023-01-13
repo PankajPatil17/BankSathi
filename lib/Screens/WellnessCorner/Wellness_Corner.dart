@@ -50,7 +50,7 @@ class _WellnessCornerState extends State<WellnessCorner> {
                 BackButton(
                   color: Color(0xff2479ab),
                 ),
-                SvgPicture.asset('assets/Images/Emedlife.svg'),
+                SvgPicture.asset('assets/Images/BankSathi.svg'),
               ],
             ),
           )),

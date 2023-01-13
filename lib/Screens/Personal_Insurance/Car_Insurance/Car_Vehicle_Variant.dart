@@ -49,7 +49,7 @@ class _CarVehicleVariantState extends State<CarVehicleVariant> {
                       Icons.arrow_back_ios_rounded,
                       color: Colors.black,
                     )),
-                SvgPicture.asset('assets/Images/Emedlife.svg'),
+                SvgPicture.asset('assets/Images/BankSathi.svg'),
               ],
             ),
           )),

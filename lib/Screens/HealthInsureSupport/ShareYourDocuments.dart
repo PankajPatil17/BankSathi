@@ -141,7 +141,7 @@ class _ShareYourDocumentsState extends State<ShareYourDocuments> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   BackButton(),
-                  SvgPicture.asset('assets/Images/Emedlife.svg'),
+                  SvgPicture.asset('assets/Images/BankSathi.svg'),
                   Spacer(),
                   SvgPicture.asset('assets/Images/Notification.svg'),
                 ],

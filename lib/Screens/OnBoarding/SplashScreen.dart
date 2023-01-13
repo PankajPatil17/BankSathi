@@ -79,7 +79,7 @@ class _SplashScreenState extends State<SplashScreen> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             SvgPicture.asset(
-              "assets/Images/Emedlife-Logo.svg",
+              "assets/Images/BankSathi.svg",
               height: 15.h,
               width: 15.h,
             ),

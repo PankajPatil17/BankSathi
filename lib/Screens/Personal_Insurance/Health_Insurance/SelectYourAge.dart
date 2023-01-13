@@ -44,7 +44,7 @@ class _SelectYourAgeState extends State<SelectYourAge> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   BackButton(),
-                  SvgPicture.asset('assets/Images/Emedlife.svg'),
+                  SvgPicture.asset('assets/Images/BankSathi.svg'),
                 ],
               ),
             )),

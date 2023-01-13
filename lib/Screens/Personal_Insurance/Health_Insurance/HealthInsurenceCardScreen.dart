@@ -46,7 +46,7 @@ class _HealthInsurenceCardScreenState extends State<HealthInsurenceCardScreen> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   BackButton(),
-                  SvgPicture.asset('assets/Images/Emedlife.svg'),
+                  SvgPicture.asset('assets/Images/BankSathi.svg'),
                 ],
               ),
             )),

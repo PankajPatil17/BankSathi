@@ -44,7 +44,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
           SizedBox(
             width: 2.h,
           ),
-          SvgPicture.asset('assets/Images/Emedlife.svg'),
+          SvgPicture.asset('assets/Images/BankSathi.svg'),
           Spacer(),
           // GestureDetector(
           //     onTap: () {

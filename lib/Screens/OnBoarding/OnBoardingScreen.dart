@@ -64,7 +64,7 @@
 //                 width: 20.h,
 //                 margin: EdgeInsets.only(bottom: 6.h),
 //                 child: SvgPicture.asset(
-//                   'assets/Images/Emedlife.svg',
+//                   'assets/Images/BankSathi.svg',
 //                   fit: BoxFit.fill,
 //                 )),
 //             Container(

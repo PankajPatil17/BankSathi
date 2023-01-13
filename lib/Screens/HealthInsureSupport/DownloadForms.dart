@@ -56,7 +56,7 @@ class _DownloadFormsState extends State<DownloadForms> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   BackButton(),
-                  SvgPicture.asset('assets/Images/Emedlife.svg'),
+                  SvgPicture.asset('assets/Images/BankSathi.svg'),
                   Spacer(),
                   SvgPicture.asset('assets/Images/Notification.svg'),
                 ],

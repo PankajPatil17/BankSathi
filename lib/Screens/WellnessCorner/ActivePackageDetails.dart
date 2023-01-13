@@ -46,7 +46,7 @@ class _ActicePackagesDetailsState extends State<ActicePackagesDetails> {
                 BackButton(
                   color: Color(0xff2479ab),
                 ),
-                SvgPicture.asset('assets/Images/Emedlife.svg'),
+                SvgPicture.asset('assets/Images/BankSathi.svg'),
               ],
             ),
           )),

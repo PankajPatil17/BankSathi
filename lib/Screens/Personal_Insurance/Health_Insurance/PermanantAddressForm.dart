@@ -52,7 +52,7 @@ class _PermanantAddressFormState extends State<PermanantAddressForm> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   BackButton(),
-                  SvgPicture.asset('assets/Images/Emedlife.svg'),
+                  SvgPicture.asset('assets/Images/BankSathi.svg'),
                 ],
               ),
             )),
