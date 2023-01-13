@@ -60,5 +60,7 @@ HeaderText({titleLabel}) {
     colorT: Color(0xff333333),
     fontw8: FontWeight.w400,
     size: 13.sp,
+    maxline: 1,
+    overflow: TextOverflow.ellipsis,
   );
 }
