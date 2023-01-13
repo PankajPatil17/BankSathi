@@ -117,8 +117,8 @@ class _SelectMedicalHistoryState extends State<SelectMedicalHistory> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(6),
                                   gradient: LinearGradient(colors: [
-                                    Color(0xff4BC4F9),
-                                    Color(0xff4BC4F9),
+                                    Color(0xff49D49D),
+                                    Color(0xff49D49D),
                                   ])),
                               child: CommonTextNunito(
                                 label: 'View Quotes',

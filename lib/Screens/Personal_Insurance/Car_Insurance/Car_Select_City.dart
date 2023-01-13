@@ -168,7 +168,7 @@ class _CarSelectCityState extends State<CarSelectCity> {
                                             HealthInsurerController.CityName
                                                 .indexOf(HealthInsurerController
                                                     .CityName[index])
-                                        ? Color(0xff4BC4F9)
+                                        ? Color(0xffA882DD)
                                         : Colors.transparent,
                                     width: 1.5),
                                 shape: BoxShape.circle),

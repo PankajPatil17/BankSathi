@@ -155,8 +155,8 @@ class _SelectYourAgeState extends State<SelectYourAge> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(6),
                                   gradient: LinearGradient(colors: [
-                                    Color(0xffA882DD),
-                                    Color(0xffA882DD),
+                                    Color(0xff49D49D),
+                                    Color(0xff49D49D),
                                   ])),
                               child: CommonTextNunito(
                                 label: 'Next',

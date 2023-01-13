@@ -102,7 +102,7 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                                         right: 1.8.h),
                                     alignment: Alignment.center,
                                     decoration: BoxDecoration(
-                                        color: Color(0xff4BC4F9),
+                                        color: Color(0xffA882DD),
                                         borderRadius: BorderRadius.only(
                                             bottomRight: Radius.circular(6),
                                             topLeft: Radius.circular(6))),

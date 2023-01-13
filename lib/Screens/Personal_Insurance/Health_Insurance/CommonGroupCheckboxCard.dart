@@ -416,8 +416,8 @@ class _CommonGroupCheckboxCardState extends State<CommonGroupCheckboxCard> {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(6),
                     gradient: LinearGradient(colors: [
-                      Color.fromARGB(255, 186, 152, 242),
-                      Color.fromARGB(255, 164, 248, 164),
+                      Color(0xff49D49D),
+                      Color(0xff49D49D),
                     ])),
                 child: CommonTextNunito(
                   label: 'Next',
