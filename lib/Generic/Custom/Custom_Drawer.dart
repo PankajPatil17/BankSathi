@@ -215,8 +215,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 GestureDetector(
                   onTap: () {
                     Get.to(WebviewScreen(
-                        url:
-                            'https://emedshield.com/emedlife-terms-and-conditions',
+                        url: 'https://www.banksathi.com/terms.html',
                         labelname: 'Terms & Condition'));
                   },
                   child: Row(
@@ -245,7 +244,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   onTap: () {
                     Get.to(WebviewScreen(
                       labelname: 'Privacy Policy',
-                      url: 'https://emedshield.com/emedlife-privacy-policy',
+                      url: 'https://www.banksathi.com/privacy.html',
                     ));
                   },
                   child: Row(

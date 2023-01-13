@@ -172,13 +172,13 @@ class _MyProfileState extends State<MyProfile> {
                                           Get.to(WebviewScreen(
                                             labelname: 'Privacy Policy',
                                             url:
-                                                'https://emedshield.com/emedlife-privacy-policy',
+                                                'https://www.banksathi.com/privacy.html',
                                           ));
                                         } else if (index == 2) {
                                           Get.to(WebviewScreen(
                                             labelname: 'Terms & Condition',
                                             url:
-                                                'https://emedshield.com/emedlife-terms-and-conditions',
+                                                'https://www.banksathi.com/terms.html',
                                           ));
                                         }
                                         // else if (index == 2) {

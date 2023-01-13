@@ -209,7 +209,7 @@ class _RegisterAccountState extends State<RegisterAccount> {
                                       setState(() {
                                         Get.to(WebviewScreen(
                                             url:
-                                                'https://emedshield.com/emedlife-terms-and-conditions',
+                                                'https://www.banksathi.com/terms.html',
                                             labelname: 'Terms & Condition'));
                                       });
                                     },
@@ -239,7 +239,7 @@ class _RegisterAccountState extends State<RegisterAccount> {
                                       setState(() {
                                         Get.to(WebviewScreen(
                                           url:
-                                              'https://emedshield.com/emedlife-privacy-policy',
+                                              'https://www.banksathi.com/privacy.html',
                                           labelname: 'Privacy Policy',
                                         ));
                                       });
