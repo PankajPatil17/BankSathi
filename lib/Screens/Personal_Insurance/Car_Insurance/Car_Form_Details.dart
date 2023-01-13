@@ -196,9 +196,23 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                       ],
                     ),
                     Container(
+                      width: 100.h,
                       padding: EdgeInsets.all(2.h),
                       decoration: BoxDecoration(
                           color: Color.fromARGB(209, 245, 219, 245)),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          CommonTextNunito(
+                            label: 'Previous Insurer and Policy Expiry',
+                            fontw8: FontWeight.w500,
+                            size: 12.sp,
+                            overflow: TextOverflow.ellipsis,
+                            maxline: 1,
+                            colorT: Colors.purple,
+                          )
+                        ],
+                      ),
                     ),
                   ],
                 ),
