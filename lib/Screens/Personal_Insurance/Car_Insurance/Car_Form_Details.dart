@@ -209,7 +209,7 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                             size: 12.sp,
                             overflow: TextOverflow.ellipsis,
                             maxline: 1,
-                            colorT: Colors.purple,
+                            colorT: Color(0xffA882DD),
                           )
                         ],
                       ),
