@@ -5,7 +5,6 @@ import 'package:get/get.dart';
 import 'package:bank_sathi/Controller/DeviceInfoNotifiController.dart';
 import 'package:bank_sathi/Controller/SignUpController.dart';
 import 'package:bank_sathi/Generic/Common/Common_Text.dart';
-import 'package:bank_sathi/Generic/Constant/variables.dart';
 import 'package:lottie/lottie.dart';
 import 'package:sizer/sizer.dart';
 import 'package:slide_countdown/slide_countdown.dart';
