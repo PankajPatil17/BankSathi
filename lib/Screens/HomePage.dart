@@ -3,6 +3,8 @@ import 'package:bank_sathi/Generic/Custom/Custom_AppBar.dart';
 import 'package:bank_sathi/Generic/Custom/Custom_Wellness_Package.dart';
 import 'package:bank_sathi/Screens/EmployeeBenefitProgram/EmpBenProgram.dart';
 import 'package:bank_sathi/Screens/HealthInsureSupport/HealthInsureSupportMainScreen.dart';
+import 'package:bank_sathi/Screens/Personal_Insurance/Car_Insurance/Car_Insurance_Home.dart';
+import 'package:bank_sathi/Screens/Personal_Insurance/Health_Insurance/HealthInsurerGroupsMainScreenFirst.dart';
 import 'package:bank_sathi/Screens/WellnessCorner/Wellness_ComingSoon.dart';
 import 'package:bank_sathi/Controller/AccountController.dart';
 import 'package:bank_sathi/Controller/HomePageController.dart';
@@ -426,7 +428,7 @@ class _HomePageState extends State<HomePage> {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(colors: [
-            Color(0xffC9F7FF),
+            Color.fromARGB(255, 195, 235, 219),
             Color(0xffFFFFFF),
           ]),
           boxShadow: [
@@ -457,15 +459,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               GestureDetector(
                 onTap: () {
-                  // Get.to(CarInsuranceHomePage(), transition: transitoineffect);
-                  setState(() {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return WellnessComingSoon();
-                      },
-                    );
-                  });
+                  Get.to(CarInsuranceHomePage(), transition: transitoineffect);
                 },
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -488,17 +482,8 @@ class _HomePageState extends State<HomePage> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Get.to(HealthInsurerGroupsMainScreenFirst(),
-                  //     transition: transitoineffect);
-
-                  setState(() {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return WellnessComingSoon();
-                      },
-                    );
-                  });
+                  Get.to(HealthInsurerGroupsMainScreenFirst(),
+                      transition: transitoineffect);
                 },
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
@@ -522,16 +507,8 @@ class _HomePageState extends State<HomePage> {
               ),
               GestureDetector(
                 onTap: () {
-                  // Get.to(HealthInsurerGroupsMainScreenFirst(),
-                  //     transition: transitoineffect);
-                  setState(() {
-                    showDialog(
-                      context: context,
-                      builder: (BuildContext context) {
-                        return WellnessComingSoon();
-                      },
-                    );
-                  });
+                  Get.to(HealthInsurerGroupsMainScreenFirst(),
+                      transition: transitoineffect);
                 },
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
