@@ -291,7 +291,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       margin: EdgeInsets.symmetric(vertical: 3.h),
                       width: 20.h,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 94, 34, 158),
+                        color: Color.fromARGB(255, 118, 88, 159),
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Center(
