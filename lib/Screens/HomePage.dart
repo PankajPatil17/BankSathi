@@ -479,7 +479,9 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    SvgPicture.asset('assets/Images/Car.svg'),
+                    SvgPicture.asset(
+                      'assets/Images/Car.svg',
+                    ),
                     SizedBox(
                       height: 1.2.h,
                     ),

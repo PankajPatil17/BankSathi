@@ -410,7 +410,7 @@ const labelTextStyleGreenReguler14 = TextStyle(
 const labelTextStyleDarkBlueReguler14 = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 13,
-    color: Color(0xff1000ff),
+    color: Color.fromARGB(255, 109, 99, 243),
     fontFamily: 'Nunito Sans');
 const labelTextStyleGreenReguler20 = TextStyle(
     fontWeight: FontWeight.w400,

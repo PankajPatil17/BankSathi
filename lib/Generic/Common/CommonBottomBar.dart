@@ -53,7 +53,7 @@ class _CommonBottomBarState extends State<CommonBottomBar> {
                   height: 2.9.h,
                   width: 2.9.h,
                   color: widget.changetabcolor == 'Home'
-                      ? mainBlue
+                      ? Color.fromARGB(255, 109, 99, 243)
                       : Colors.grey.shade400,
                 ),
                 Text(
@@ -88,7 +88,7 @@ class _CommonBottomBarState extends State<CommonBottomBar> {
                   height: 2.9.h,
                   width: 2.9.h,
                   color: widget.changetabcolor == 'Policies'
-                      ? mainBlue
+                      ? Color.fromARGB(255, 109, 99, 243)
                       : Colors.grey.shade400,
                 ),
                 Text(
@@ -113,7 +113,7 @@ class _CommonBottomBarState extends State<CommonBottomBar> {
                   height: 2.9.h,
                   width: 2.9.h,
                   color: widget.changetabcolor == 'Support'
-                      ? mainBlue
+                      ? Color.fromARGB(255, 109, 99, 243)
                       : Colors.grey.shade400,
                 ),
                 Text(
@@ -137,7 +137,7 @@ class _CommonBottomBarState extends State<CommonBottomBar> {
                   height: 2.9.h,
                   width: 2.9.h,
                   color: widget.changetabcolor == 'Profile'
-                      ? mainBlue
+                      ? Color.fromARGB(255, 109, 99, 243)
                       : Colors.grey.shade400,
                 ),
                 Text(
