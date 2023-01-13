@@ -33,7 +33,7 @@ class _HealthInsurenceCommonCardState extends State<HealthInsurenceCommonCard> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.network(
-                  'https://insuretech.enirmaan.com/images/HDFCERGO.png',
+                  'https://www.nivabupa.com/content/dam/nivabupa/Image/logos/NivaLogo324x180.png',
                   height: 7.h,
                   width: 7.h,
                 ),
@@ -46,7 +46,7 @@ class _HealthInsurenceCommonCardState extends State<HealthInsurenceCommonCard> {
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           CommonTextNunito(
-                            label: 'HDFC ERGO',
+                            label: 'NivaBupa',
                             colorT: Color(0xff021B8D),
                             fontw8: FontWeight.w600,
                             size: 11.sp,
@@ -67,11 +67,10 @@ class _HealthInsurenceCommonCardState extends State<HealthInsurenceCommonCard> {
                         ],
                       ),
                       SizedBox(
-                        height: 0.8.h,
+                        height: 0.6.h,
                       ),
                       CommonTextNunito(
-                        label:
-                            'HDFC ERGO Health Suraksha Individual - Silver New',
+                        label: 'NivaBupa Health Insurance',
                         colorT: Colors.black,
                         fontw8: FontWeight.w500,
                         size: 9.sp,
