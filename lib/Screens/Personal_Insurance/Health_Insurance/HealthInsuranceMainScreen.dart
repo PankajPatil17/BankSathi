@@ -113,7 +113,7 @@ class _HealthInsuranceMainScreenState extends State<HealthInsuranceMainScreen> {
                                   borderRadius: BorderRadius.circular(6),
                                   gradient: LinearGradient(colors: [
                                     Color(0xffA882DD),
-                                    Color(0xffA882DD),
+                                    Color.fromARGB(255, 192, 235, 186),
                                   ])),
                               child: CommonTextNunito(
                                 label: 'Next',

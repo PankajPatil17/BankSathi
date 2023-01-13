@@ -18,8 +18,9 @@ const commonboxshadow = [
 ];
 const commonboxshadowBlue = [
   BoxShadow(
-      blurRadius: 2,
-      spreadRadius: 2,
-      offset: Offset(0, 2),
-      color: Color.fromARGB(255, 214, 191, 245))
+    blurRadius: 2,
+    spreadRadius: 2,
+    offset: Offset(0, 2),
+    color: Color.fromARGB(255, 229, 221, 241),
+  )
 ];
