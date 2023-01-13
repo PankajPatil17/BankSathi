@@ -203,7 +203,7 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                       padding: EdgeInsets.all(2.h),
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(6),
-                          color: Color.fromARGB(209, 239, 239, 239)),
+                          color: Color(0xffF2FBFF)),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
