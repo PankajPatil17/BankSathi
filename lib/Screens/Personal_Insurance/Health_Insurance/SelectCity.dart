@@ -130,7 +130,7 @@ class _SelectCityState extends State<SelectCity> {
                                                   .indexOf(
                                                       HealthInsurerController
                                                           .CityName[index])
-                                          ? Color(0xff4BC4F9)
+                                          ? Color(0xffA882DD)
                                           : Colors.transparent,
                                       width: 1.2),
                                   shape: BoxShape.circle),
@@ -159,8 +159,8 @@ class _SelectCityState extends State<SelectCity> {
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(6),
                                   gradient: LinearGradient(colors: [
-                                    Color(0xff4BC4F9),
-                                    Color(0xff4BC4F9),
+                                    Color(0xffA882DD),
+                                    Color(0xffA882DD),
                                   ])),
                               child: CommonTextNunito(
                                 label: 'Next',
