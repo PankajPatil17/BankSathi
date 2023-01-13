@@ -23,6 +23,11 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
   DateTime? _ManufacYr;
   DateTime? _RegDateYr;
   DateTime? _PolicyExpdate;
+  String? CustomerTypeRadioBtn;
+  String? LicencevalidityRadioBtn;
+  String? ClaimRadioBtn;
+  String? PACoverRadioBtn;
+  String? OwnerChangeRadioBtn;
   TextEditingController RegNum = TextEditingController();
   void _presentDatePicker1() {
     // showDatePicker is a pre-made funtion of Flutter
@@ -315,16 +320,16 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
                                   ),
                                 ],
                               )),
-                          HeaderText(titleLabel: 'Pancard Number'),
+                          HeaderText(titleLabel: 'Registration Number'),
                           Container(
                             decoration: BoxDeco(),
                             width: 100.w,
                             child: TextFormField(
                               validator: (val) {
                                 if (val!.isEmpty) {
-                                  return 'Please Enter Pancard Number';
+                                  return 'Please Enter Registration Number';
                                 } else if (val.length < 2) {
-                                  return "Please Enter Pancard Number";
+                                  return "Please Enter Registration Number";
                                 }
                                 return null;
                               },
@@ -335,7 +340,7 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
                                 contentPadding: EdgeInsets.symmetric(
                                   horizontal: 10.0,
                                 ),
-                                hintText: 'Enter Pancard Number',
+                                hintText: 'Registration Number',
                                 hintStyle: TextStyle(
                                     fontWeight: FontWeight.w500,
                                     fontSize: 11.sp,
@@ -346,12 +351,306 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
                         ],
                       ),
                     ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      margin: EdgeInsets.only(top: 1.5.h),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          HeaderText(titleLabel: 'Customer Type'),
+                          SubHeaderText(SubtitleLabel: 'Vehicle Owned By'),
+                          Row(
+                            children: [
+                              Container(
+                                width: 32.w,
+                                child: RadioListTile(
+                                  contentPadding: EdgeInsets.all(0),
+                                  title: Text("Individual",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "No",
+                                  groupValue: CustomerTypeRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      CustomerTypeRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                              Container(
+                                width: 35.w,
+                                child: RadioListTile(
+                                  contentPadding:
+                                      EdgeInsets.only(right: 0, left: 0.w),
+                                  title: Text("Organization",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "yes",
+                                  groupValue: CustomerTypeRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      CustomerTypeRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      margin: EdgeInsets.only(top: 1.5.h),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          HeaderText(titleLabel: 'Licence validity'),
+                          SubHeaderText(
+                              SubtitleLabel:
+                                  'Do you have a valid driving license?'),
+                          Row(
+                            children: [
+                              Container(
+                                width: 32.w,
+                                child: RadioListTile(
+                                  contentPadding: EdgeInsets.all(0),
+                                  title: Text("No",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "No",
+                                  groupValue: LicencevalidityRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      LicencevalidityRadioBtn =
+                                          value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                              Container(
+                                width: 35.w,
+                                child: RadioListTile(
+                                  contentPadding:
+                                      EdgeInsets.only(right: 0, left: 0.w),
+                                  title: Text("Yes",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "yes",
+                                  groupValue: LicencevalidityRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      LicencevalidityRadioBtn =
+                                          value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      margin: EdgeInsets.only(top: 1.5.h),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          HeaderText(titleLabel: 'PA Cover'),
+                          SubHeaderText(
+                              SubtitleLabel:
+                                  'Do you already have Personal Accidental (PA) cover of Rs 15 lakh ?'),
+                          Row(
+                            children: [
+                              Container(
+                                width: 32.w,
+                                child: RadioListTile(
+                                  contentPadding: EdgeInsets.all(0),
+                                  title: Text("No",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "No",
+                                  groupValue: PACoverRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      PACoverRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                              Container(
+                                width: 35.w,
+                                child: RadioListTile(
+                                  contentPadding:
+                                      EdgeInsets.only(right: 0, left: 0.w),
+                                  title: Text("Yes",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "yes",
+                                  groupValue: PACoverRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      PACoverRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      margin: EdgeInsets.only(top: 1.5.h),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          HeaderText(titleLabel: 'Owner Change'),
+                          SubHeaderText(
+                              SubtitleLabel:
+                                  'Owner changed in last 12 months?'),
+                          Row(
+                            children: [
+                              Container(
+                                width: 32.w,
+                                child: RadioListTile(
+                                  contentPadding: EdgeInsets.all(0),
+                                  title: Text("No",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "No",
+                                  groupValue: OwnerChangeRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      OwnerChangeRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                              Container(
+                                width: 35.w,
+                                child: RadioListTile(
+                                  contentPadding:
+                                      EdgeInsets.only(right: 0, left: 0.w),
+                                  title: Text("Yes",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "yes",
+                                  groupValue: OwnerChangeRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      OwnerChangeRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      margin: EdgeInsets.only(top: 1.5.h),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          HeaderText(titleLabel: 'Claim'),
+                          SubHeaderText(
+                              SubtitleLabel: 'Claim made in expiring policy?'),
+                          Row(
+                            children: [
+                              Container(
+                                width: 32.w,
+                                child: RadioListTile(
+                                  contentPadding: EdgeInsets.all(0),
+                                  title: Text("No",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "No",
+                                  groupValue: ClaimRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      ClaimRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                              Container(
+                                width: 35.w,
+                                child: RadioListTile(
+                                  contentPadding:
+                                      EdgeInsets.only(right: 0, left: 0.w),
+                                  title: Text("Yes",
+                                      style: TextStyle(
+                                          fontWeight: FontWeight.w500,
+                                          fontSize: 10.sp,
+                                          fontFamily: 'Nunito Sans')),
+                                  value: "yes",
+                                  groupValue: ClaimRadioBtn,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      ClaimRadioBtn = value.toString();
+                                    });
+                                  },
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
                     GestureDetector(
                       onTap: () {},
                       child: Center(
                         child: Container(
                           height: 5.5.h,
-                          width: 15.h,
+                          width: 18.h,
                           margin: EdgeInsets.only(top: 2.h, bottom: 3.5.h),
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(6),
@@ -392,6 +691,21 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
         colorT: Color(0xff313131),
         fontw8: FontWeight.w600,
         size: 12.sp,
+      ),
+    );
+  }
+
+  //Subheader Text
+  SubHeaderText({SubtitleLabel}) {
+    return Padding(
+      padding: EdgeInsets.only(
+        bottom: 1.5.h,
+      ),
+      child: CommonTextNunito(
+        label: SubtitleLabel,
+        colorT: Color(0xff313131),
+        fontw8: FontWeight.w600,
+        size: 10.sp,
       ),
     );
   }
