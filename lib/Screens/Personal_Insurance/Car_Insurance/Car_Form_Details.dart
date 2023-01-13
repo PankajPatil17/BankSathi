@@ -167,7 +167,7 @@ class _CarFormDetailsState extends State<CarFormDetails> {
                                 isExpanded: true,
                                 isDense: true,
                                 hint: CommonText(
-                                  label: 'Registration',
+                                  label: 'Select year',
                                   textStyle: labelTextStyleGreyReguler14,
                                 ),
                                 underline: Container(
