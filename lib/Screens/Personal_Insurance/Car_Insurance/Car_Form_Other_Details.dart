@@ -28,6 +28,8 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
   String? ClaimRadioBtn;
   String? PACoverRadioBtn;
   String? OwnerChangeRadioBtn;
+  String? NCB;
+  List NCBList = ['Company A', 'Company B', 'Company C'];
   TextEditingController RegNum = TextEditingController();
   void _presentDatePicker1() {
     // showDatePicker is a pre-made funtion of Flutter
@@ -69,7 +71,7 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
             context: context,
             initialDate: DateTime.now(),
             firstDate: DateTime(1950),
-            lastDate: DateTime.now())
+            lastDate: DateTime(2050))
         .then((pickedDate) {
       if (pickedDate == null) {
         return;
@@ -642,6 +644,64 @@ class _CarFormOtherDetailsState extends State<CarFormOtherDetails> {
                               ),
                             ],
                           ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                        color: Color.fromARGB(255, 229, 221, 241),
+                        borderRadius: BorderRadius.circular(6),
+                      ),
+                      margin: EdgeInsets.only(top: 1.5.h),
+                      padding: EdgeInsets.only(
+                          bottom: 2.4.h, left: 1.6.h, right: 1.6.h),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          HeaderText(titleLabel: 'NCB'),
+                          SubHeaderText(
+                              SubtitleLabel: 'Previous No Claim Bonus (NCB)'),
+                          Container(
+                              height: 6.5.h,
+                              width: 100.w,
+                              padding: EdgeInsets.symmetric(
+                                  vertical: 1.5.h, horizontal: 1.h),
+                              decoration: BoxDeco(),
+                              child: DropdownButton(
+                                underline: Container(
+                                  color: Colors.white,
+                                ),
+                                focusColor: Colors.white,
+                                menuMaxHeight: 300.0,
+                                isExpanded: true,
+                                isDense: true,
+                                hint: Text(
+                                  "Select company",
+                                  style: TextStyle(
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 11.sp,
+                                      fontFamily: 'Nunito Sans'),
+                                ),
+                                value: NCB,
+                                items: NCBList.map((item) {
+                                  return DropdownMenuItem(
+                                      enabled: true,
+                                      value: item.toString(),
+                                      child: Text(
+                                        item,
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w400,
+                                            fontSize: 11.sp,
+                                            overflow: TextOverflow.ellipsis),
+                                      ));
+                                }).toList(),
+                                onChanged: (value) {
+                                  setState(() {
+                                    NCB = value.toString();
+                                  });
+                                },
+                              )),
                         ],
                       ),
                     ),
