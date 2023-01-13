@@ -21,7 +21,7 @@ class _CommonDropDownState extends State<CommonDropDown> {
     return Container(
       padding: EdgeInsets.all(1.4.h),
       decoration: BoxDecoration(
-          color: Colors.white,
+          color: PWhite,
           boxShadow: commonboxshadowBlue,
           borderRadius: BorderRadius.circular(6)),
       child: Center(
@@ -30,7 +30,7 @@ class _CommonDropDownState extends State<CommonDropDown> {
           iconEnabledColor: Color(0xff4BC4F9),
           iconDisabledColor: Color(0xff4BC4F9),
           underline: Container(
-            color: Colors.white,
+            color: PWhite,
           ),
           focusColor: Colors.white,
           menuMaxHeight: 300.0,

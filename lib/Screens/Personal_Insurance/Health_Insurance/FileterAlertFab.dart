@@ -47,7 +47,7 @@ class _FileterAlertFabState extends State<FileterAlertFab> {
                   width: 38.w,
                   padding: EdgeInsets.all(1.4.h),
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: PWhite,
                       boxShadow: commonboxshadowBlue,
                       borderRadius: BorderRadius.circular(6)),
                   child: Center(

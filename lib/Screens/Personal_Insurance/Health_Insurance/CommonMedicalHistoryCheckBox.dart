@@ -11,7 +11,7 @@ class CommonMedicalHistoryCheckBox extends StatefulWidget {
   final subheadertitle;
 
   const CommonMedicalHistoryCheckBox(
-      {super.key, required this.headertitle, required this.subheadertitle});
+      {required this.headertitle, required this.subheadertitle});
 
   @override
   State<CommonMedicalHistoryCheckBox> createState() =>

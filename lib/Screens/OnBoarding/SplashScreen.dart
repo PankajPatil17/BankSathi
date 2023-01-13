@@ -78,10 +78,13 @@ class _SplashScreenState extends State<SplashScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            SvgPicture.asset(
-              "assets/Images/BankSathi.svg",
-              height: 15.h,
-              width: 15.h,
+            Padding(
+              padding: EdgeInsets.symmetric(horizontal: 6.h),
+              child: SvgPicture.asset(
+                "assets/Images/BankSathi.svg",
+                height: 15.h,
+                width: 15.h,
+              ),
             ),
           ],
         ),

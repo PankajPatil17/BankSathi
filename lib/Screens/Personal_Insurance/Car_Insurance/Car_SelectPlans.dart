@@ -62,7 +62,7 @@ class _CarSelectPlansState extends State<CarSelectPlans> {
     return Scaffold(
       backgroundColor: Colors.grey.shade100,
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: PWhite,
         elevation: 1,
         centerTitle: true,
         automaticallyImplyLeading: false,

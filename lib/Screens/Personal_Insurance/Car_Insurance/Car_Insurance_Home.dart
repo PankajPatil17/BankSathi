@@ -14,8 +14,6 @@ import 'package:sizer/sizer.dart';
 import 'package:get/get.dart';
 
 class CarInsuranceHomePage extends StatefulWidget {
-  CarInsuranceHomePage({super.key});
-
   @override
   State<CarInsuranceHomePage> createState() => _CarInsuranceHomePageState();
 }

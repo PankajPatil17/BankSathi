@@ -69,7 +69,7 @@ class _CommonGroupCheckboxCardState extends State<CommonGroupCheckboxCard> {
                   width: 43.w,
                   padding: EdgeInsets.all(1.5.h),
                   decoration: BoxDecoration(
-                      color: Colors.white,
+                      color: PWhite,
                       boxShadow: commonboxshadowBlue,
                       borderRadius: BorderRadius.circular(6)),
                   child: Row(

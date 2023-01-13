@@ -30,7 +30,7 @@ class _CommonSonDaughterincDecCardState
       padding: EdgeInsets.all(1.5.h),
       margin: EdgeInsets.symmetric(vertical: 1.5.h),
       decoration: BoxDecoration(
-          color: Colors.white,
+          color: PWhite,
           boxShadow: commonboxshadowBlue,
           borderRadius: BorderRadius.circular(6)),
       child: Row(

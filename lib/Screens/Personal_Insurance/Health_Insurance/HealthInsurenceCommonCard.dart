@@ -21,7 +21,7 @@ class _HealthInsurenceCommonCardState extends State<HealthInsurenceCommonCard> {
       width: 100.w,
       margin: EdgeInsets.only(bottom: 2.3.h),
       decoration: BoxDecoration(
-          color: Colors.white,
+          color: PWhite,
           boxShadow: commonboxshadowBlue,
           borderRadius: BorderRadius.circular(6)),
       child: Column(
