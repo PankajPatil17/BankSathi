@@ -1,0 +1,33 @@
+<svg id="My_Coverage" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="39.286" viewBox="0 0 44 39.286">
+  <defs>
+    <filter id="Path_115499">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <path id="Path_115499-2" data-name="Path 115499" d="M43.376,43.648,34.718,28.654a4.679,4.679,0,0,0-4.057-2.343H13.344A4.679,4.679,0,0,0,9.287,28.6L.629,43.592a4.677,4.677,0,0,0,0,4.686L9.287,63.272A4.7,4.7,0,0,0,13.344,65.6H30.661a4.7,4.7,0,0,0,4.057-2.268l8.658-14.994A4.715,4.715,0,0,0,43.376,43.648Z" transform="translate(0 -26.311)" fill="#4bc4f9"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_115499)">
+      <path id="Path_115499-3" data-name="Path 115499" d="M43.376,43.648,34.718,28.654a4.679,4.679,0,0,0-4.057-2.343H13.344A4.679,4.679,0,0,0,9.287,28.6L.629,43.592a4.677,4.677,0,0,0,0,4.686L9.287,63.272A4.7,4.7,0,0,0,13.344,65.6H30.661a4.7,4.7,0,0,0,4.057-2.268l8.658-14.994A4.715,4.715,0,0,0,43.376,43.648Z" transform="translate(0 -26.31)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="My_Coverage-2" data-name="My_Coverage" transform="translate(-31.5 -296.408)">
+    <rect id="Rectangle_167549" data-name="Rectangle 167549" width="19" height="19" transform="translate(44 306.408)" fill="none"/>
+    <g id="user_3_" data-name="user (3)" transform="translate(45.149 306.408)">
+      <g id="Group_333" data-name="Group 333" transform="translate(3.335)">
+        <g id="Group_332" data-name="Group 332" transform="translate(0)">
+          <path id="Path_114096" data-name="Path 114096" d="M126,0a5,5,0,1,0,5,5A5.009,5.009,0,0,0,126,0Z" transform="translate(-121)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_335" data-name="Group 335" transform="translate(0 11.118)">
+        <g id="Group_334" data-name="Group 334" transform="translate(0)">
+          <path id="Path_114097" data-name="Path 114097" d="M45.563,302.157A7.132,7.132,0,0,0,40.45,300H38.227a7.132,7.132,0,0,0-5.113,2.157A7.291,7.291,0,0,0,31,307.3a.556.556,0,0,0,.556.556H47.121a.556.556,0,0,0,.556-.556A7.291,7.291,0,0,0,45.563,302.157Z" transform="translate(-31 -300)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

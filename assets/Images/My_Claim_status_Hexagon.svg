@@ -1,0 +1,29 @@
+<svg id="My_Claim_status" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="39.286" viewBox="0 0 44 39.286">
+  <defs>
+    <filter id="Path_115499">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <path id="Path_115499-2" data-name="Path 115499" d="M43.376,43.648,34.718,28.654a4.679,4.679,0,0,0-4.057-2.343H13.344A4.679,4.679,0,0,0,9.287,28.6L.629,43.592a4.677,4.677,0,0,0,0,4.686L9.287,63.272A4.7,4.7,0,0,0,13.344,65.6H30.661a4.7,4.7,0,0,0,4.057-2.268l8.658-14.994A4.715,4.715,0,0,0,43.376,43.648Z" transform="translate(0 -26.311)" fill="#4bc4f9"/>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Path_115499)">
+      <path id="Path_115499-3" data-name="Path 115499" d="M43.376,43.648,34.718,28.654a4.679,4.679,0,0,0-4.057-2.343H13.344A4.679,4.679,0,0,0,9.287,28.6L.629,43.592a4.677,4.677,0,0,0,0,4.686L9.287,63.272A4.7,4.7,0,0,0,13.344,65.6H30.661a4.7,4.7,0,0,0,4.057-2.268l8.658-14.994A4.715,4.715,0,0,0,43.376,43.648Z" transform="translate(0 -26.31)" fill="#fff"/>
+    </g>
+  </g>
+  <g id="My_Claim_status-2" data-name="My_Claim_status" transform="translate(11.852 10.178)">
+    <rect id="Rectangle_167549" data-name="Rectangle 167549" width="18.916" height="18.916" transform="translate(0.648 -0.035)" fill="none"/>
+    <g id="status" transform="translate(0.648 -0.035)">
+      <g id="Group_336" data-name="Group 336">
+        <g id="ngicon">
+          <path id="Path_114099" data-name="Path 114099" d="M942.081,385.095a7.295,7.295,0,0,1-8.807-7.164,1.1,1.1,0,1,0-2.209,0,9.5,9.5,0,0,0,11.473,9.335,1.109,1.109,0,0,0-.457-2.171Zm-.489-14.414a7.332,7.332,0,0,1,2.849,13.452,1.108,1.108,0,0,0,1.177,1.878,9.554,9.554,0,0,0-3.717-17.527,1.109,1.109,0,0,0-.309,2.2ZM933.8,375.2a7.336,7.336,0,0,1,4.354-4.18,1.109,1.109,0,0,0-.732-2.094,9.556,9.556,0,0,0-5.672,5.445,1.105,1.105,0,1,0,2.049.829Z" transform="translate(-931.065 -368.472)" fill="#fff" fill-rule="evenodd"/>
+        </g>
+      </g>
+    </g>
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="3.5" cy="3.5" r="3.5" transform="translate(6.56 6.053)" fill="#fff"/>
+  </g>
+</svg>

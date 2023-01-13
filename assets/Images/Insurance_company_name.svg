@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="97.128" height="95.726" viewBox="0 0 97.128 95.726">
+  <g id="Insurance_company_name" transform="translate(-222.872 -154.273)">
+    <path id="Path_115662" data-name="Path 115662" d="M2999.093,1746.126c4.731,12.8-7.115,16.636-14.888,30.87s-13.973,26.456-32.574,26.058c-28.878-.619-43.113-36.573-41.4-47.9,3.92-25.946,29.137-4.474,48.7-10.98,14.2-4.722,35.434-10.839,40.164,1.956Zm0,0" transform="translate(-2680.175 -1566.063)" fill="#02b576" fill-rule="evenodd"/>
+    <g id="Group_1178" data-name="Group 1178" transform="translate(-3218.914 -2074.222)">
+      <path id="Path_115663" data-name="Path 115663" d="M3544.543,2313.727s.342,16.4-4.909,22.812-8.839-1.017-5.445-4.246,7.464-5.56,10.354-18.566Zm0,0" transform="translate(-14.565 -14.844)" fill="#00dc8f" fill-rule="evenodd"/>
+      <path id="Path_115664" data-name="Path 115664" d="M3524.736,2295.8s-1.506,10.067-5.387,13.441-5.3-1.545-2.885-3.168,5.145-2.62,8.272-10.273Zm0,0" transform="translate(0 0)" fill="#00dc8f" fill-rule="evenodd"/>
+    </g>
+    <g id="Group_1179" data-name="Group 1179" transform="translate(222.872 154.273)">
+      <path id="Path_115663-2" data-name="Path 115663" d="M3532.867,2338s-.328-15.711,4.7-21.854,8.468.974,5.216,4.067-7.15,5.328-9.919,17.787Zm0,0" transform="translate(-3532.862 -2313.727)" fill="#00dc8f" fill-rule="evenodd"/>
+      <path id="Path_115664-2" data-name="Path 115664" d="M3515.275,2309.788s1.443-9.645,5.161-12.877,5.079,1.48,2.764,3.035-4.929,2.51-7.925,9.842Zm0,0" transform="translate(-3510.248 -2282.561)" fill="#00dc8f" fill-rule="evenodd"/>
+    </g>
+    <g id="company" transform="translate(252.711 186.913)">
+      <path id="Path_115665" data-name="Path 115665" d="M211,456.172h2.086V452H211Z" transform="translate(-196.329 -420.571)" fill="#fff"/>
+      <path id="Path_115666" data-name="Path 115666" d="M151,456.172h2.086V452H151Z" transform="translate(-140.501 -420.571)" fill="#fff"/>
+      <path id="Path_115667" data-name="Path 115667" d="M4.241,202.86H0v2.086H8.413v-6.258h10.43v6.258h4.172V182H4.241Zm4.172-14.6h10.43v2.086H8.413Zm0,4.172h10.43v2.086H8.413Z" transform="translate(0 -169.345)" fill="#fff"/>
+      <path id="Path_115668" data-name="Path 115668" d="M199.774,33.515V0H181V10.569h12.516V35.6h10.5V33.515ZM197.688,21v2.086H195.6V21ZM195.6,18.913V16.827h2.086v2.086Zm2.086,6.258v2.086H195.6V25.171Zm0,4.172v2.086H195.6V29.343Zm0-14.6H195.6V12.655h2.086ZM185.172,2.225H195.6V4.311h-10.43Zm0,6.258V6.4H195.6V8.483Z" transform="translate(-168.415)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
